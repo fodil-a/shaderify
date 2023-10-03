@@ -5,7 +5,7 @@ import 'package:flutter_shaders/flutter_shaders.dart';
 
 import 'package:flutter/widgets.dart';
 
-final start = DateTime.now().millisecondsSinceEpoch.abs();
+final _start = DateTime.now().millisecondsSinceEpoch.abs();
 
 class ShaderWidget extends StatefulWidget {
   const ShaderWidget({super.key, required this.shaderPath});
@@ -33,6 +33,12 @@ class _ShaderWidgetState extends State<ShaderWidget>
     )..repeat();
 
     start = DateTime.now();
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
   }
 
   @override
@@ -77,7 +83,7 @@ class ShaderPainter extends CustomPainter {
     shader.setFloat(3, mousePos.dy);
 
     var now = DateTime.now().millisecondsSinceEpoch.abs();
-    var time = (now - start) / 1000.0;
+    var time = (now - _start) / 1000.0;
     shader.setFloat(4, time);
 
     final paint = Paint()..shader = shader;

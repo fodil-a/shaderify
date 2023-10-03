@@ -1,6 +1,6 @@
 name: shaderify
 description: "That's a helper to add shaders easily, with some variables like time, mouse position, and size."
-version: 0.0.1
+version: 0.0.3
 homepage: https://shader-fofo.web.app/
 
 environment:
