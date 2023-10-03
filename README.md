@@ -1,5 +1,5 @@
-[![Version](https://img.shields.io/github/v/release/fodil-a/shaderify?label=version)](https://pub.dev/packages/fluro)
-[![Build Status](https://github.com/fodil-a/shaderify/workflows/build/badge.svg)](https://github.com/lukepighetti/fluro/actions)
+[![Version](https://img.shields.io/github/v/release/fodil-a/shaderify?label=version)](https://pub.dev/packages/shaderify)
+[![Build Status](https://github.com/fodil-a/shaderify/workflows/build/badge.svg)](https://github.com/fodil-a/shaderify/actions)
 
 That's a helper to add shaders easily, with some variables like time, mouse position, and size  
 
